@@ -1,0 +1,346 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    
+  }
+  
+  hmtl, body{
+    background: rgb(251, 251, 251);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  section{
+    padding: 60px 0;
+    width: 100vw;
+    height: 99vh;
+    overflow: hidden;
+  }
+  
+  .titulo{
+    color:#F5FFBF;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom:60px;
+  }
+  
+  h2{
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 25px 5px;
+  }
+
+  h3{
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 5px;
+  }
+  
+  p{
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+    padding: 0 0 20px;
+    margin: 0;
+  }
+
+  /* header */
+
+  header{
+    width: 100%;
+    height: 19vh;
+    background-image: url(../imagenes/fonodo.header.png);
+    background-size: cover;
+  }
+  
+  .logo{
+    height: 250px;
+    width: 190px;
+    margin-top: 35px;
+  
+  }
+  
+  
+  .logo{
+    height: 30vh;
+    width: 190px;
+    margin-top: 35px;
+  
+  }
+  
+  
+  nav{
+    width: 100%;
+    height: 19vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    background-color: rgba(190, 0, 0, 0.41);
+  }
+  
+  
+  nav ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: 20px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px; 
+    font-weight: 150;
+    text-transform: uppercase;
+  }
+  
+  .menu-icon{
+    display: none;
+  }
+  
+
+  section{
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* informacion */
+
+  .marco{
+    width: 45vw;
+    height: 77vh;
+    /* background-color: rgb(220, 255, 255); */
+  }
+
+  .marco img{
+    width: 300px;
+    margin: 30px auto;
+    align-items: center;
+  }
+
+  /* comentarios */
+
+  .comentarios{
+    width: 42vw;
+    height: 80vh;
+    padding: 100px auto;
+    border-radius: 30px;
+    background-color: rgb(252, 226, 191);
+  }
+
+  textarea{
+    background-color: #fff9f8;
+    border: rgb(186, 186, 186) solid 1px;
+  }
+
+  label{
+      width: 400px;
+      display: grid;
+      color: rgb(46, 45, 45);
+      font-size: 25px;
+      flex-direction: column;
+      align-items: center;
+      margin: 25px 0px 0px 90px;
+      border-radius: 30px;
+      justify-content: center;
+      
+
+  } 
+
+
+  input{
+      width: 400px;
+      height: 40px;
+      display: flex;
+      background-color: #fff9f8;
+      border: rgb(186, 186, 186) solid 1px;
+      color: rgb(216, 0, 0);
+      margin: 24px auto;
+      border-radius: 5px;
+      justify-content: center;
+
+  }
+
+  button{
+      width: 200px; 
+      height: 50px;
+      display: flex;
+      border-radius: 15px;
+      background:  rgba(228, 142, 29, 0.753);
+      border:none;
+      font-size: 20px;
+      align-items: center;
+      margin: 10px auto;
+      justify-content: center;
+  }
+
+/* --- */
+footer{
+  width:100vw;
+  height: 25vh;
+  background-color: #410b13;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  padding: 44px 6vw 30px;
+}
+
+footer a p{
+  color: white;
+  margin: 10px 18px;
+  text-align: center;
+  font-weight: 19;
+  text-transform: uppercase;
+  font-size: 25px;
+  }
+
+  @media only screen and ( max-width: 800px){
+    
+    /* header */
+  
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+  
+    nav ul{
+        display: none;
+    }
+    header{
+      width: 100%;
+      height: 200vh;
+      background-image: url(../imagenes/flower_phone.png);
+      background-size: cover;
+    }
+  
+    img{
+      width: 50%;
+    }
+    
+    .logo{
+      height: 250px;
+      width: 190px;
+      margin-top: 35px;
+    }
+  
+  
+  
+    /* sections */
+  
+    #series, #peliculas, #contenedor {
+      opacity: 0;
+      display: none;
+    }
+  
+    .pie__inicio{
+      display: none;
+    }
+  
+    /* pie */
+  
+    .contacto{
+        margin: 25px auto;
+        text-align: center;
+        font-weight: 50;
+        
+      }
+      footer{
+        display:inline-block
+      }
+      p{
+        color: white;
+        height: 50px;
+        width: 163;
+        margin: 0px auto;
+        text-align: center;
+        font-weight: 19;
+        text-transform: uppercase;
+        font-size: 25px;
+      }
+  
+    }
+
+  /* boton
+
+  .boton{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+   footer 
+  
+  footer{
+    width:50vw;
+    height: 81vh;
+    display: flex;
+    background-color: #410b13;
+    padding: 20px;
+    font-size: 50px;
+    float: right;
+  }
+  
+  footer a{
+    color: black;
+    border-radius: 10px;
+    background-color: rgb(255, 184, 184);
+    height: 50px;
+    width: 150px;
+    margin: 3px 8px;
+    text-align: center;
+    }
+  
+  form{
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 0px 20px 18px;
+  }
+  
+  label{
+    color: aliceblue;
+  }
+  
+  @media only screen and ( max-width: 600px){
+    .menu-icon{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    header{
+      width: 100%;
+      height: 110vh;
+      background-image: url(../imagenes/amapolla.pantalla.c.marca.png);
+      background-size: cover;
+    }
+  
+    img{
+      width: 30%;
+    }
+    
+  }
+   */
+  
+  
+  
+  
+  
+  
+  
+  
+  
